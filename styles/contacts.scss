@@ -1,0 +1,21 @@
+/*contacts styles*/
+
+.contacts {
+  background-color: #3a3e64;
+  text-align: center;
+  padding-top: 68px;
+  padding-bottom: 83px;
+
+  &-header {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &-description {
+    color: #7c7e98;
+  }
+
+}
