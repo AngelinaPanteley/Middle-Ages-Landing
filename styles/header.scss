@@ -1,63 +1,44 @@
-/*header styles*/
-
 .main-header {
-  height: 10rem;
   background: rgba(0,0,0,.3);
+  height: 10rem;
   line-height: 10rem;
   position: fixed;
-  z-index: 5;
   width: 100%;
+  z-index: 5;
 }
 
 .navigation a {
   color: white;
-  margin-left: 5.9rem;
+  float: right;
   font-size: 1.3rem;
   font-weight: bold;
+  margin-left: 5.9rem;
   text-transform: uppercase;
-  float: right;
+
+  &:first-child {
+    margin-right: 2rem;
+  }
+
+  @media (max-width: $mobile-size) {
+    margin-left: 1.5rem;
+  }
 }
 
 .heading {
-  background-image: url(../img/11111.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
+  color: white;
+  height: 100vh;
+  min-height: 640px;
   padding-top: 25.5rem;
   text-align: center;
-  height: 100vh;
-  color: white;
-  min-height: 640px;
 }
 
 .logo {
   width: 62rem;
-}
 
-///
-
-.find-button,
-.download-button {
-  font-weight:600;
-  color: #f7e5e5;
-  border: none;
-  line-height: 21px;
-  font-size: 12px;
-  text-transform: uppercase;
-  background: #e84545;
-  padding-top:12px;
-  padding-bottom:12px;
-  cursor: pointer;
-  transition: all .2s ease-out 0s;
-
-}
-
-.find-button {
-  margin-top: 75px;
-  padding-left: 55px;
-  padding-right: 45px;
-}
-
-.download-button {
-  padding-left: 85px;
-  padding-right: 85px;
+  @media (max-width: $mobile-size) {
+    width: 90%;
+  }
 }
 

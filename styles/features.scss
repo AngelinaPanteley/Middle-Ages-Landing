@@ -1,17 +1,15 @@
-/*features style*/
-
 .sprite {
-  height: 6rem;
   background-repeat: no-repeat;
+  height: 60px;
+  left: 50%;
   position: absolute;
   top: 0%;
-  left: 50%;
   transform: translateX(-50%);
 }
 
 .features {
-  margin-top: 12rem;
   margin-bottom: 5rem;
+  margin-top: 12rem;
   text-align: center;
 }
 

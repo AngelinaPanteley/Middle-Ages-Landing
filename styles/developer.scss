@@ -1,24 +1,28 @@
-/*team styles*/
-
 .developer {
-  padding-top: 5rem;
+  background: #3b3e65;
+  color: #fff;
   padding-bottom: 10rem;
+  padding-top: 5rem;
+
+  h2 {
+    color: #fff
+  }
 }
 
 .developer-name {
-  margin-top: 2.5rem;
-  margin-bottom: .5rem;
+  color: #fff;
   font-size: 2.2rem;
   line-height: 3.2rem;
-  color: #000;
+  margin-bottom: .5rem;
+  margin-top: 2.5rem;
 }
 
 .developer-profession {
-  margin-bottom: 2rem;
+  color: #e84545;
   font-size: 1.3rem;
   line-height: 2.3rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
-  color: #e84545;
 }
 
 .developer-photo {
@@ -26,12 +30,12 @@
 }
 
 .developer .col-4 {
+  float: none;
   margin: 0 auto;
   text-align: center;
-  float: none;
 }
 
 .icons {
-  margin-top: 2.5rem;
   margin-right: 14rem;
+  margin-top: 2.5rem;
 }

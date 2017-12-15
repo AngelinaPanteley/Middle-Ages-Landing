@@ -1,17 +1,15 @@
-/*contacts styles*/
-
 .contacts {
   background-color: #3a3e64;
-  text-align: center;
-  padding-top: 68px;
   padding-bottom: 83px;
+  padding-top: 68px;
+  text-align: center;
 
   &-header {
+    color: white;
     font-size: 14px;
     font-weight: bold;
-    color: white;
-    text-transform: uppercase;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 
   &-description {

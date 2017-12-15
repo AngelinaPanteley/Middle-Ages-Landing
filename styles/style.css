@@ -12,35 +12,52 @@
 html {
   font-size: 10px;
   line-height: 100%; }
+  @media (max-width: 690px) {
+    html {
+      font-size: 8px; } }
 
 body {
+  color: #6c7279;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
-  color: #6c7279;
   line-height: 21px; }
 
 .container {
-  width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 1170px; }
+  @media (max-width: 1200px) {
+    .container {
+      width: 100%; } }
 
 .row:after {
-  content: "";
   clear: both;
+  content: "";
   display: block; }
 
 .col-2 {
-  width: 50%;
-  float: left; }
+  float: left;
+  width: 50%; }
+  @media (max-width: 1020px) {
+    .col-2 {
+      width: 100%; } }
 
 .col-3 {
-  width: 33.33%;
-  float: left; }
+  float: left;
+  width: 33.33%; }
+  @media (max-width: 690px) {
+    .col-3 {
+      width: 100%; } }
 
 .col-4 {
-  width: 25%;
-  float: left; }
+  float: left;
+  width: 25%; }
+  @media (max-width: 690px) {
+    .col-4 {
+      width: 70%; } }
 
-/*typografy*/
+section {
+  padding-top: 5rem; }
+
 a {
   color: #e84545;
   text-decoration: none; }
@@ -113,136 +130,116 @@ h3 {
   border: #b3b4b9 solid 1px;
   margin-top: 25px; }
 
-/*contacts styles*/
 .contacts {
   background-color: #3a3e64;
-  text-align: center;
+  padding-bottom: 83px;
   padding-top: 68px;
-  padding-bottom: 83px; }
+  text-align: center; }
   .contacts-header {
+    color: white;
     font-size: 14px;
     font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-transform: uppercase; }
   .contacts-description {
     color: #7c7e98; }
 
-/*header styles*/
 .main-header {
-  height: 10rem;
   background: rgba(0, 0, 0, 0.3);
+  height: 10rem;
   line-height: 10rem;
   position: fixed;
-  z-index: 5;
-  width: 100%; }
+  width: 100%;
+  z-index: 5; }
 
 .navigation a {
   color: white;
-  margin-left: 5.9rem;
+  float: right;
   font-size: 1.3rem;
   font-weight: bold;
-  text-transform: uppercase;
-  float: right; }
+  margin-left: 5.9rem;
+  text-transform: uppercase; }
+  .navigation a:first-child {
+    margin-right: 2rem; }
+  @media (max-width: 690px) {
+    .navigation a {
+      margin-left: 1.5rem; } }
 
 .heading {
-  background-image: url(../img/11111.jpg);
+  background-image: url(../img/header.jpg);
   background-size: cover;
-  padding-top: 25.5rem;
-  text-align: center;
-  height: 100vh;
   color: white;
-  min-height: 640px; }
+  height: 100vh;
+  min-height: 640px;
+  padding-top: 25.5rem;
+  text-align: center; }
 
 .logo {
   width: 62rem; }
+  @media (max-width: 690px) {
+    .logo {
+      width: 90%; } }
 
-.find-button,
-.download-button {
-  font-weight: 600;
-  color: #f7e5e5;
-  border: none;
-  line-height: 21px;
-  font-size: 12px;
-  text-transform: uppercase;
-  background: #e84545;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  cursor: pointer;
-  transition: all .2s ease-out 0s; }
-
-.find-button {
-  margin-top: 75px;
-  padding-left: 55px;
-  padding-right: 45px; }
-
-.download-button {
-  padding-left: 85px;
-  padding-right: 85px; }
-
-/*footer styles*/
 .footer {
   background: #313454;
-  text-align: center;
   padding-bottom: 25px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
 
 .site-author {
   color: white; }
 
-/*play styles*/
 .play {
   padding-bottom: 10rem;
   padding-top: 10rem;
   text-align: center; }
 
 .play-header {
+  color: #000;
   font-size: 2.8rem;
-  line-height: 3.8rem;
-  color: #000; }
+  line-height: 3.8rem; }
 
 .play-description {
-  font-size: 1.3rem;
-  line-height: 2.1rem;
-  font-weight: bold;
   color: #000;
-  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2.1rem;
+  margin-bottom: 3.5rem;
   margin-top: 1rem;
-  margin-bottom: 3.5rem; }
+  text-transform: uppercase; }
 
 .play-link {
-  position: relative;
-  word-spacing: nowrap;
-  transition: all .2s ease-out 0s;
-  display: inline-block;
-  color: #fff;
   background-color: #e84545;
+  color: #fff;
+  display: inline-block;
   padding: 1rem 6rem;
-  text-transform: uppercase; }
+  position: relative;
+  text-transform: uppercase;
+  transition: all .2s ease-out 0s;
+  word-spacing: nowrap; }
 
 .play-link:hover {
   background-color: #b62222;
-  transition: all .2s ease-out 0s;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all .2s ease-out 0s; }
 
 .icon-block {
+  display: inline-block;
   font-family: 'fontello';
   font-style: normal;
-  font-weight: normal;
-  display: inline-block; }
+  font-weight: normal; }
 
-/*features style*/
 .sprite {
-  height: 6rem;
   background-repeat: no-repeat;
+  height: 60px;
+  left: 50%;
   position: absolute;
   top: 0%;
-  left: 50%;
   transform: translateX(-50%); }
 
 .features {
-  margin-top: 12rem;
   margin-bottom: 5rem;
+  margin-top: 12rem;
   text-align: center; }
 
 .icon {
@@ -256,35 +253,66 @@ h3 {
 .features h3 {
   margin-top: 9.5rem; }
 
-/*team styles*/
 .developer {
-  padding-top: 5rem;
-  padding-bottom: 10rem; }
+  background: #3b3e65;
+  color: #fff;
+  padding-bottom: 10rem;
+  padding-top: 5rem; }
+  .developer h2 {
+    color: #fff; }
 
 .developer-name {
-  margin-top: 2.5rem;
-  margin-bottom: .5rem;
+  color: #fff;
   font-size: 2.2rem;
   line-height: 3.2rem;
-  color: #000; }
+  margin-bottom: .5rem;
+  margin-top: 2.5rem; }
 
 .developer-profession {
-  margin-bottom: 2rem;
+  color: #e84545;
   font-size: 1.3rem;
   line-height: 2.3rem;
-  text-transform: uppercase;
-  color: #e84545; }
+  margin-bottom: 2rem;
+  text-transform: uppercase; }
 
 .developer-photo {
   width: 100%; }
 
 .developer .col-4 {
+  float: none;
   margin: 0 auto;
-  text-align: center;
-  float: none; }
+  text-align: center; }
 
 .icons {
-  margin-top: 2.5rem;
-  margin-right: 14rem; }
+  margin-right: 14rem;
+  margin-top: 2.5rem; }
+
+.manual {
+  background: #3b3e65; }
+  .manual h2 {
+    color: #fff; }
+  .manual img {
+    width: 90%; }
+
+.manual-item {
+  color: #fff;
+  margin-bottom: 12rem;
+  text-align: center; }
+
+.manual-name {
+  color: #e84545;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  margin-bottom: .5rem;
+  margin-top: 2.5rem; }
+
+.flex-direction-nav {
+  display: none; }
+
+.flex-control-thumbs {
+  height: 145px; }
+
+.flex-control-nav li:last-child {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
