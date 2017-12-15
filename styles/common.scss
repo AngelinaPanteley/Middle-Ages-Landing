@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing:border-box;
+}
+
+/*base*/
+
+html {
+  font-size: 10px;
+  line-height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #6c7279;
+  line-height: 21px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.row:after {
+  content:"";
+  clear: both;
+  display: block;
+}
+
+.col-2 {
+  width: 50%;
+  float: left;
+}
+
+.col-3 {
+  width: 33.33%;
+  float: left;
+}
+
+.col-4 {
+  width: 25%;
+  float: left;
+}

@@ -3,72 +3,54 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel=stylesheet href="styles/main.css">
+  <link rel=stylesheet href="styles/style.css">
 
 </head>
 <body>
  <div class="wrapper">
 
-
   <header class="main-header">
-    	<div class="container">
-    		<nav class="right navigation">
-    			<a  href="#features">features</a>
-    			<a  href="#manual">manual</a>
-    			<a  href="#screens">screens</a>
-    			<a  href="#developer">developer</a>
-    			<a  href="#play">play</a>
-    		</nav>
-    	</div>
+  	<div class="container">
+  		<nav class="navigation">
+        <a  href="#play">play</a>
+        <a  href="#developer">developer</a>
+        <a  href="#screens">screens</a>
+        <a  href="#manual">manual</a>
+        <a  href="#features">features</a>
+  		</nav>
+  	</div>
   </header>
 
+  <section class="heading">
+    <h1>
+      <img src="img/logo.png" alt="Middle Ages Hero" class="logo"/>
+    </h1>
+  </section>
 
-  <div class="top-section">
-      <div class="container">
-        <img src="img/logo.png" alt="" />
+  <div class="container features" id="features">
+    <h2>Features</h2>
+    <div class="row">
+      <div class="col-3 icon">
+        <i class="sprite sprite-feature-1"></i>
+        <h3>easily customize</h3>
+        <p class="feature-description">Resolution of the game screen is 1200 x 600, you can reduce/increase the browser window (ctrl -/+).</p>
       </div>
-  </div>
-
-  <div class="container features-block" id="features">
-      <div class="row">
-        <div class="left col-3 icon-block">
-          <div class="feature-icon-1"></div>
-          <h2>easily customize</h2>
-          <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-        </div>
-        <div class="left col-3 icon-block">
-          <div class="feature-icon-2"></div>
-          <h2>Responsive ready</h2>
-          <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-        </div>
-        <div class="left col-3 icon-block">
-          <div class="feature-icon-3"></div>
-          <h2>modern design</h2>
-          <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-        </div>
+      <div class="col-3 icon">
+        <i class="sprite sprite-feature-2"></i>
+        <h3>Technologies</h3>
+        <p class="feature-description">This game is built using: JavaScript, Canvas, Phaser.js</p>
       </div>
-      <div class="row">
-        <div class="left col-3 icon-block">
-          <div class="feature-icon-4"></div>
-          <h2>clean code</h2>
-          <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-        </div>
-        <div class="left col-3 icon-block">
-          <div class="feature-icon-5"></div>
-          <h2>ready to ship</h2>
-          <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-        </div>
-        <div class="left col-3 icon-block">
-          <div class="feature-icon-6"></div>
-          <h2>download for free</h2>
-          <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-        </div>
+      <div class="col-3 icon">
+        <i class="sprite sprite-feature-3"></i>
+        <h3>Play for free</h3>
+        <p class="feature-description">Yes, everything is correct, it's completely free. Feel all the beauty of 8-bit games.</p>
       </div>
+    </div>
   </div>
 
   <div class="works-block" id="works">
        <!-- Place somewhere in the <body> of your page -->
-       <div class="flexslider js-flexslider-1">
+  <!--     <div class="flexslider js-flexslider-1">
            <ul class="slides">
               <li data-thumb="img/work1.png">
                   <img src="img/work1.png" />
@@ -105,19 +87,21 @@
         <div class="col-4 work7"><div class="project-name-block"><p class="project-name">project name</p><p>User Interface Design</p></div></div>
         <div class="col-4 work8"><div class="project-name-block"><p class="project-name">project name</p><p>User Interface Design</p></div></div>
       </div>
-  </div>
+  </div>-->
 
-  <section class="our-team-block row container" id="developer">
+  <section class="developer row container" id="developer">
     <h2>Developer</h2>
     <div class="col-4">
-      <img src="img/developer-photo.jpg"/>
-      <p class="worker-name">
+      <img src="img/developer-photo.jpg" class="developer-photo" />
+      <p class="developer-name">
         Angelina Panteley
       </p>
-      <p class="worker-profession">
-        Markup developer
+      <p class="developer-profession">
+        Front-end developer
       </p>
-
+      <p class="developer-description">
+        HTML-markup developer, junior javascript developer, student of Rolling-Scopes Front-end Course.
+      </p>
       <p>
         <a href="#"><i class="worker-icons demo-icon icon-facebook"></i></a>
         <a href="#"><i class="worker-icons demo-icon icon-twitter"></i></a>
@@ -126,15 +110,15 @@
     </div>
   </section>
 
-  <section class="play" id="download">
-    <p class="download-header">
+  <section class="play" id="play">
+    <p class="play-header">
       Are You Ready to Start? Play Now For Free!
     </p>
-    <p class="download-description">
+    <p class="play-description">
       the world of adventure is calling you
     </p>
-    <button class="download-button">play here
-    </button>
+    <a href="https://angelinapanteley.github.io/Middle-Ages-Game/" class="play-link">play here
+    </a>
   </section>
 
   <section class="contacts">

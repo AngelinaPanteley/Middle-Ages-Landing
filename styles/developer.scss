@@ -1,0 +1,37 @@
+/*team styles*/
+
+.developer {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.developer-name {
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #000;
+}
+
+.developer-profession {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: #e84545;
+}
+
+.developer-photo {
+  width: 100%;
+}
+
+.developer .col-4 {
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+}
+
+.icons {
+  margin-top: 2.5rem;
+  margin-right: 14rem;
+}
